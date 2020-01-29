@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: white;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 100%;
+  background: gray;
+  padding: 10px;
+  padding-top: 100px;
+  text-align: center; 
+
+}
+
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: gray;
+  padding: 8%;
+
+}
+
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav {
+    width: 100%;
+    height: auto;
+
+  }
+}
+</style>
+</head>
+<body>
+
+
+
+<header>
+  <img src="logo.png" alt="logo" height="475px" width="1000px"/>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">About </a></li>
+      <li><a href="#"><i class="fas fa-download" height="10px" width="10px"></i></a></li>
+      <li><a href="#"><i class="fab fa-instagram" height="1000px" width="1000px"></i></a></li>
+    </ul>
+  </nav>
+  
+
+</section>
+
+<footer>
+
+</footer>
+
+</body>
+</html>
