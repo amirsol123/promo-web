@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>CSS Template</title>
+<title>The Pong</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
@@ -10,27 +10,29 @@
   box-sizing: border-box;
 }
 
+
+
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  background-size: 100% 100%;
 }
 
 /* Style the header */
 header {
-  background-color: white;
   text-align: center;
-  font-size: 35px;
-  color: white;
+  padding-top: 0px;
+
 }
 
 /* Create two columns/boxes that floats next to each other */
 nav {
   float: left;
   width: 100%;
-  background: gray;
   padding: 10px;
-  padding-top: 100px;
+  padding-top: 1px;
   text-align: center; 
-
+  font-size: 50px;
 }
 
 
@@ -41,22 +43,6 @@ nav ul {
 }
 
 
-/* Clear floats after the columns */
-section:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Style the footer */
-footer {
-  background-color: gray;
-  padding: 8%;
-
-}
-
-
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
 @media (max-width: 600px) {
   nav {
     width: 100%;
@@ -64,6 +50,8 @@ footer {
 
   }
 }
+
+
 </style>
 </head>
 <body>
@@ -71,15 +59,15 @@ footer {
 
 
 <header>
-  <img src="logo.png" alt="logo" height="475px" width="1000px"/>
+  <img src="logo.png" alt="logo" height="500px" width="500px"/>
 </header>
 
 <section>
   <nav>
     <ul>
       <li><a href="#">About </a></li>
-      <li><a href="#"><i class="fas fa-download" height="10px" width="10px"></i></a></li>
-      <li><a href="#"><i class="fab fa-instagram" height="1000px" width="1000px"></i></a></li>
+      <li><a href="#"><i class="fas fa-download" ></i></a></li>
+      <li><a href="#"><i class="fab fa-instagram" ></i></a></li>
     </ul>
   </nav>
   
@@ -92,3 +80,4 @@ footer {
 
 </body>
 </html>
+
