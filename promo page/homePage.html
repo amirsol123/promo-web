@@ -28,24 +28,43 @@ nav{
   font-size: 50px;
 }
 
-div {
+#paddle1 {
   width: 30px;
   height: 150px;
-  background-color: red;
+  background-color: white;
   position: relative;
   animation: myfirst 1.3s linear 0s infinite alternate;
 }
+#paddle1 {left: 5px}
 
 @keyframes myfirst {
-  0%   {left: 5px; top:0px;}
-  100%  {left: 5px; top:200px;}
+  0%   {top:0px;}
+  100%  {top:200px;}
 }
+
+#paddle2 {
+  width: 30px;
+  height: 150px;
+  background-color: white;
+  position: relative;
+  animation: mysecond 1.3s linear 0s infinite alternate;
+}
+#paddle2 {left: 1390px}
+
+@keyframes mysecond {
+  0%   {top:-150px;}
+  100%  {top:50px;}
+}
+
 
 
 </style>
 </head>
 <body>
-  <div></div>
+  <div id="paddle1"></div>
+  <div id="paddle2"></div>
+
+
 
 <header>
   <img src="logo.png" alt="logo" height="500px" width="500px"/>
