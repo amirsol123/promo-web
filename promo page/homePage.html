@@ -6,13 +6,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 <style>
-* {
-  box-sizing: border-box;
-}
-
 
 
 body {
+  border: solid white 10px;
   font-family: Arial, Helvetica, sans-serif;
   background-color: black;
   background-size: 100% 100%;
@@ -26,37 +23,29 @@ header {
 }
 
 /* Create two columns/boxes that floats next to each other */
-nav {
-  float: left;
-  width: 100%;
-  padding: 10px;
-  padding-top: 1px;
+nav{
   text-align: center; 
   font-size: 50px;
 }
 
-
-/* Style the list inside the menu */
-nav ul {
-  list-style-type: none;
-  padding: 0;
+div {
+  width: 30px;
+  height: 150px;
+  background-color: red;
+  position: relative;
+  animation: myfirst 1.3s linear 0s infinite alternate;
 }
 
-
-@media (max-width: 600px) {
-  nav {
-    width: 100%;
-    height: auto;
-
-  }
+@keyframes myfirst {
+  0%   {left: 5px; top:0px;}
+  100%  {left: 5px; top:200px;}
 }
 
 
 </style>
 </head>
 <body>
-
-
+  <div></div>
 
 <header>
   <img src="logo.png" alt="logo" height="500px" width="500px"/>
@@ -64,13 +53,13 @@ nav ul {
 
 <section>
   <nav>
-    <ul>
+    <ul style="list-style-type:none;">
       <li><a href="#">About </a></li>
       <li><a href="#"><i class="fas fa-download" ></i></a></li>
       <li><a href="#"><i class="fab fa-instagram" ></i></a></li>
     </ul>
   </nav>
-  
+
 
 </section>
 
@@ -80,4 +69,3 @@ nav ul {
 
 </body>
 </html>
-
