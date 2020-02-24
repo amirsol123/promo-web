@@ -6,78 +6,110 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 <style>
-* {
-  box-sizing: border-box;
-}
-
 
 
 body {
+  border: solid white 10px;
   font-family: Arial, Helvetica, sans-serif;
   background-color: black;
   background-size: 100% 100%;
 }
 
-/* Style the header */
 header {
   text-align: center;
   padding-top: 0px;
 
 }
 
-/* Create two columns/boxes that floats next to each other */
-nav {
-  float: left;
-  width: 100%;
-  padding: 10px;
-  padding-top: 1px;
+nav{
   text-align: center; 
   font-size: 50px;
 }
 
 
-/* Style the list inside the menu */
-nav ul {
-  list-style-type: none;
-  padding: 0;
+#paddle1 {
+  width: 30px;
+  height: 150px;
+  background-color: white;
+  position: relative;
+  animation: myfirst 1s linear 0s infinite alternate;
 }
 
 
-@media (max-width: 600px) {
-  nav {
-    width: 100%;
-    height: auto;
+@keyframes myfirst {
+  from   {left: 5px; top:0px;}
+  to  {left: 5px; top:200px;}
+}
 
-  }
+#paddle2 {
+  width: 30px;
+  height: 150px;
+  background-color: white;
+  position: relative;
+  animation: mysecond 1s linear 0s infinite alternate;
+}
+
+@keyframes mysecond {
+  from   {left: 1390px; top:-150px;}
+  to  {left: 1390px; top:50px;}
+}
+
+#ball {
+  height: 35px;
+  width: 35px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  animation: mythird 3s linear 0s infinite alternate;
+
+}
+@keyframes mythird {
+  from   {left:35px; top:-210px;}
+  to  {left:1355px; top:-20px}
+}
+
+div.absolute {
+  position: absolute;
+  top: 770px;
+  right: 100px;
+
+}
+div.absolute1 {
+  position: absolute;
+  orientation: flip;
+  top: 770px;
+  left: 100px;
+
 }
 
 
 </style>
 </head>
 <body>
-
-
+  <div id="paddle1"></div>
+  <div id="paddle2"></div>
+  <div id="ball"></div>
 
 <header>
   <img src="logo.png" alt="logo" height="500px" width="500px"/>
 </header>
 
+
 <section>
   <nav>
-    <ul>
+    <ul style="list-style-type:none;">
+      <body link="white">
       <li><a href="#">About </a></li>
       <li><a href="#"><i class="fas fa-download" ></i></a></li>
       <li><a href="#"><i class="fab fa-instagram" ></i></a></li>
     </ul>
   </nav>
-  
 
 </section>
 
-<footer>
-
-</footer>
+<div class="absolute"><img src="pngwave.png" alt="paddle" height="230px" width="230px"/></div>
+<div class="absolute1"><img src="pngwave1.png" alt="paddle" height="230px" width="230px"/></div>
 
 </body>
 </html>
-
