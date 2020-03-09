@@ -12,8 +12,10 @@ p
 {
 	padding-left: 100px;
   padding-right: 10%;
-	border-left: 8px solid lightblue;
+	border-left: 8px solid white;
+  border-right: 8px solid white;
   font-family: "OCR A Std", monospace;
+  color: white;
 }
 body{
 	  background-color: black;
@@ -74,7 +76,6 @@ li a:hover
   to  {left: 97%; top:5vw;}
 }
 
-
 #ball {
   height: 2vw;
   width: 2vw;
@@ -87,4 +88,10 @@ li a:hover
 @keyframes mythird {
   from   {left:2%; top:-17vw;}
   to  {left:95.8%; top:-3vw}
+}
+.footer{
+  font-family: "OCR A Std", monospace;
+  background-color: gray;
+  color: white;
+  padding: 15px 
 }
