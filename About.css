@@ -1,0 +1,97 @@
+ h1 {
+   text-align: center;
+   color: white;
+ }
+h2
+{
+	text-align: left;
+	padding-left: 50px;
+	font-family: "OCR A Std", monospace;
+}
+p
+{
+	padding-left: 100px;
+  padding-right: 10%;
+	border-left: 8px solid white;
+  border-right: 8px solid white;
+  font-family: "OCR A Std", monospace;
+  color: white;
+}
+body{
+	  background-color: black;
+}
+ul 
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: gray;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0
+}
+li
+{
+  float: left;
+}
+li a 
+{
+  display: block;
+  color: #000;
+  text-align: center;
+  padding: 14px 50px;
+  text-decoration: none;
+  text-align: center;
+}
+li a:hover 
+{
+  	background-color: #555;
+  	color: white;
+}
+#paddle1 {
+  width: 2vw;
+  height: 10vw;
+  background-color: white;
+  position: relative;
+  animation: myfirst 1s linear 0s infinite alternate;
+}
+
+
+@keyframes myfirst {
+  from   {left: 0.5vw; top:0.5vw;}
+  to  {left: 0.5vw; top:15vw;}
+}
+
+#paddle2 {
+  width: 2vw;
+  height: 10vw;
+  background-color: white;
+  position: relative;
+  animation: mysecond 1s linear 0s infinite alternate;
+}
+
+@keyframes mysecond {
+  from   {left: 97%; top:-10vw;}
+  to  {left: 97%; top:5vw;}
+}
+
+#ball {
+  height: 2vw;
+  width: 2vw;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  animation: mythird 3s linear 0s infinite alternate;
+}
+@keyframes mythird {
+  from   {left:2%; top:-17vw;}
+  to  {left:95.8%; top:-3vw}
+}
+.footer{
+  font-family: "OCR A Std", monospace;
+  background-color: gray;
+  color: white;
+  padding: 15px 
+}
